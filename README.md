@@ -58,7 +58,7 @@ RPC for clients looking to interact with these orders.
 
 Orders are a native feature of the `tokenvm` and the storage engine is
 optimized specifically to support their efficient usage (just like balances
-above). Each order requires only 152 bytes of
+above). Order requires only 152 bytes of
 state = `orderID=>inAsset|inTick|outAsset|outTick|remaining|owner`. This
 storage format also makes it possible to parallelize the execution of any fills
 that don't touch the same order (there may be hundreds or thousands of orders
